@@ -42,10 +42,10 @@ function StatItem({ value, suffix, label, inView }: StatItemProps) {
 
     return (
         <div className="flex flex-col items-center">
-            <span className="text-6xl md:text-8xl lg:text-9xl font-bold text-white tracking-tighter">
+            <span className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter">
                 {count}{suffix}
             </span>
-            <span className="text-sm md:text-base text-white/60 uppercase tracking-widest mt-2">
+            <span className="text-xs sm:text-sm md:text-base text-white/60 uppercase tracking-widest mt-2 text-center">
                 {label}
             </span>
         </div>
@@ -76,16 +76,15 @@ export default function Stats() {
     return (
         <section
             ref={sectionRef}
-            className="min-h-screen bg-black flex flex-col items-center justify-center py-20 px-4"
+            className="min-h-screen bg-black flex flex-col items-center justify-center py-16 md:py-20 px-4"
         >
-
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white text-center mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white text-center mb-4 md:mb-6">
                 The Server Stats?
             </h2>
-            <h2 className="text-white/40 text-lg md:text-xl uppercase tracking-widest mb-16">
+            <h2 className="text-white/40 text-base md:text-lg lg:text-xl uppercase tracking-widest mb-10 md:mb-16 text-center">
                 Check the numbers out!
             </h2>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 lg:gap-32">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 lg:gap-20 max-w-6xl">
                 <StatItem value={1000} suffix="+" label="Members" inView={inView} />
                 <StatItem value={12} suffix="+" label="Staff Members" inView={inView} />
                 <StatItem value={4} suffix="+" label="Member Made Bots" inView={inView} />

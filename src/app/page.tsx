@@ -28,7 +28,7 @@ export default function Home() {
           />
         </div>
         <div className="relative z-10 w-full max-w-6xl px-4">
-          <div className="h-48 md:h-64">
+          <div className="h-32 sm:h-40 md:h-48 lg:h-64">
             <TextPressure
               text="The Codeverse Hub"
               textColor="#FFFFFF"
@@ -36,10 +36,10 @@ export default function Home() {
               width={true}
               italic={true}
               flex={true}
-              minFontSize={36}
+              minFontSize={24}
             />
           </div>
-          <p className="text-white/60 text-center text-lg md:text-xl mt-8 max-w-2xl mx-auto">
+          <p className="text-white/60 text-center text-sm sm:text-base md:text-lg lg:text-xl mt-6 md:mt-8 max-w-2xl mx-auto px-2">
             Rust, Golang, C, C++, Java, Ruby, Scala, Python, JavaScript, TypeScript, HTML, CSS, PHP, SQL, Bash, Dart, Kotlin, Swift, You name it. We got it.
           </p>
         </div>
