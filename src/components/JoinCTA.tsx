@@ -10,7 +10,7 @@ export default function JoinCTA() {
                 Become part of a thriving community of developers and creators.
             </p>
             <a
-                href="https://discord.gg/your-invite-link"
+                href="https://discord.gg/3xKFvKhuGR"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden bg-white text-black font-bold text-base md:text-lg px-8 py-4 md:px-12 md:py-5 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(139,92,246,0.5)]"
