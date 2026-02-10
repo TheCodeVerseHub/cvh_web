@@ -204,3 +204,120 @@
     inset 0 0 200px 60px rgba(139, 92, 246, 0.08),
     inset 0 0 300px 100px rgba(139, 92, 246, 0.05);
 }
+
+/* === Documentation Portal Layout === */
+
+.doc-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .doc-layout {
+    grid-template-columns: 220px 1fr;
+    gap: 3rem;
+  }
+}
+
+/* Sidebar */
+.doc-sidebar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .doc-sidebar {
+    display: block;
+    position: relative;
+  }
+
+  .doc-sidebar-inner {
+    position: sticky;
+    top: 6rem;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(139, 92, 246, 0.3) transparent;
+  }
+}
+
+/* Mobile sidebar */
+.doc-sidebar-open {
+  display: block !important;
+  position: fixed;
+  bottom: 5rem;
+  right: 1.5rem;
+  z-index: 45;
+  width: 280px;
+  max-height: 60vh;
+  background: rgba(10, 10, 15, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  overflow-y: auto;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(139, 92, 246, 0.1);
+}
+
+/* TOC items */
+.doc-toc-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.45);
+  border-left: 2px solid transparent;
+  border-radius: 0 0.25rem 0.25rem 0;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 2px solid transparent;
+}
+
+.doc-toc-item:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.doc-toc-sub {
+  padding-left: 1.5rem;
+  font-size: 0.75rem;
+}
+
+.doc-toc-active {
+  color: rgb(167, 139, 250) !important;
+  border-left-color: rgb(139, 92, 246) !important;
+  background: rgba(139, 92, 246, 0.08) !important;
+}
+
+/* Header icon badge */
+.doc-icon-badge {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(139, 92, 246, 0.05));
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.25rem;
+}
+
+/* Header divider */
+.doc-header-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(139, 92, 246, 0.4), rgba(139, 92, 246, 0.05) 60%, transparent);
+}
+
+/* Scroll offset for anchors */
+[id] {
+  scroll-margin-top: 5rem;
+}
