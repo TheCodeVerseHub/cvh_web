@@ -4,69 +4,76 @@ import GradientText from "./GradientText";
 
 export default function About() {
   return (
-    <section className="min-h-screen bg-black flex flex-col items-center justify-center py-16 md:py-20 px-4">
-      <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white text-center mb-4 md:mb-6">
-        What do we Do here?
+    <section className="min-h-screen bg-black flex flex-col items-center justify-center py-20 px-4">
+      {/* Label */}
+      <span className="inline-block text-violet-400 text-xs font-mono uppercase tracking-widest mb-8 px-3 py-1 rounded-full border border-violet-500/30 bg-violet-500/10">
+        Who we are
+      </span>
+
+      <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white text-center mb-12 md:mb-16">
+        Real devs. Real help.
       </h2>
-      <div className="max-w-4xl mx-auto space-y-6 md:space-y-8 text-center">
-        <div className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/30 hover:text-white transition-colors duration-500">
-          We're not just another Discord server.
+
+      <div className="max-w-4xl mx-auto space-y-7 md:space-y-10 text-center">
+        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/25 hover:text-white transition-colors duration-500 cursor-default">
+          We&apos;re not a lecture hall or a bootcamp.
         </div>
-        <div className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/30 hover:text-white transition-colors duration-500">
-          We're a{" "}
+        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/25 hover:text-white transition-colors duration-500 cursor-default">
+          We&apos;re a{" "}
           <GradientText
-            colors={["#00ecd9ff", "#d13606ff", "#f7cc0dff"]}
+            colors={["#8B5CF6", "#EC4899", "#8B5CF6"]}
             className="inline"
           >
-            community
-          </GradientText>{" "}
-          of developers,
-        </div>
-        <div className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/30 hover:text-white transition-colors duration-500">
-          creators, and{" "}
-          <GradientText
-            colors={["#00ecd9ff", "#d13606ff", "#f7cc0dff"]}
-            className="inline"
-          >
-            innovators
+            community of builders
           </GradientText>
           .
         </div>
-        <div className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/30 hover:text-white transition-colors duration-500">
-          Building the future,{" "}
+        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/25 hover:text-white transition-colors duration-500 cursor-default">
+          People who post code at 2am and{" "}
           <GradientText
-            colors={["#00ecd9ff", "#d13606ff", "#f7cc0dff"]}
+            colors={["#8B5CF6", "#EC4899", "#8B5CF6"]}
             className="inline"
           >
-            together
+            actually get an answer
           </GradientText>
           .
         </div>
-        <div className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/30 hover:text-white transition-colors duration-500">
-          We have people, who work with{" "}
+        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/25 hover:text-white transition-colors duration-500 cursor-default">
+          Beginners learning{" "}
           <GradientText
-            colors={["#00ecd9ff", "#d13606ff", "#f7cc0dff"]}
+            colors={["#8B5CF6", "#EC4899", "#8B5CF6"]}
             className="inline"
           >
-            any
-          </GradientText>{" "}
-          stack.
-        </div>
-        <div className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/30 hover:text-white transition-colors duration-500">
-          The same people, who are from{" "}
-          <GradientText
-            colors={["#00ecd9ff", "#d13606ff", "#f7cc0dff"]}
-            className="inline"
-          >
-            all around the world
+            their first language
           </GradientText>
           .
+        </div>
+        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/25 hover:text-white transition-colors duration-500 cursor-default">
+          Seniors shipping{" "}
+          <GradientText
+            colors={["#8B5CF6", "#EC4899", "#8B5CF6"]}
+            className="inline"
+          >
+            open source projects
+          </GradientText>
+          .
+        </div>
+        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-white/25 hover:text-white transition-colors duration-500 cursor-default">
+          Developers from{" "}
+          <GradientText
+            colors={["#8B5CF6", "#EC4899", "#8B5CF6"]}
+            className="inline"
+          >
+            50+ countries
+          </GradientText>
+          {" "}all speaking the same language — code.
         </div>
       </div>
-      <div className="mt-8 md:mt-12" />
-      <h2 className="text-white/40 text-sm md:text-lg lg:text-xl tracking-widest mb-16 text-center px-4">
-        usually, we aren't professional, but we are happy!
-      </h2>
+
+      <div className="mt-16" />
+      <p className="text-white/30 text-sm md:text-base font-mono tracking-widest text-center px-4">
+        // we&apos;re not perfect, but we&apos;re passionate
+      </p>
     </section>
   );
 }
