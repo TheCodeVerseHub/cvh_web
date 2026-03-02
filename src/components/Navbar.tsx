@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Terminal } from "lucide-react";
+import { ChevronDown, Terminal } from "lucide-react";
 
 const navLinks = [
     { href: "/", label: "Home" },
@@ -12,8 +12,21 @@ const navLinks = [
     { href: "/pages/server-info", label: "Server Info" },
 ];
 
+const moreLinks = [
+    { href: "/pages/code-of-conduct", label: "Code of Conduct" },
+    { href: "/pages/how-to-ask", label: "How to Ask for Help" },
+    { href: "/pages/join", label: "Join Guide" },
+    { href: "/pages/contributing", label: "Contributing" },
+    { href: "/pages/moderation-guide", label: "Moderation Guide" },
+    { href: "/pages/privacy-policy", label: "Privacy Policy" },
+    { href: "/pages/security-notice", label: "Security Notice" },
+    { href: "/pages/tags", label: "Tags Reference" },
+    { href: "/pages/acknowledgements", label: "Acknowledgements" },
+];
+
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isMoreOpen, setIsMoreOpen] = useState(false);
 
     return (
         <nav className="sticky top-0 z-50 w-full bg-black/80 backdrop-blur-md border-b border-white/5">
@@ -38,6 +51,33 @@ export default function Navbar() {
                             </Link>
                         </li>
                     ))}
+                    {/* More dropdown */}
+                    <li className="relative h-full">
+                        <button
+                            type="button"
+                            onClick={() => setIsMoreOpen((prev) => !prev)}
+                            className="relative overflow-hidden h-full flex items-center gap-1.5 text-white text-sm font-medium px-4 lg:px-5 before:absolute before:inset-0 before:bg-white before:origin-left before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100 hover:text-black transition-colors duration-300"
+                        >
+                            <span className="relative z-10">More</span>
+                            <ChevronDown
+                                className={`relative z-10 w-3.5 h-3.5 transition-transform duration-200 ${isMoreOpen ? "rotate-180" : ""}`}
+                            />
+                        </button>
+                        {isMoreOpen && (
+                            <div className="absolute right-0 top-full mt-1 w-64 rounded-lg border border-white/15 bg-black/95 backdrop-blur-md shadow-xl py-2 z-[60]">
+                                {moreLinks.map((link) => (
+                                    <Link
+                                        key={link.label}
+                                        href={link.href}
+                                        className="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 transition-colors"
+                                        onClick={() => setIsMoreOpen(false)}
+                                    >
+                                        {link.label}
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
+                    </li>
                     <li className="h-full">
                         <a
                             href="https://discord.gg/3xKFvKhuGR"
@@ -81,6 +121,21 @@ export default function Navbar() {
                                 href={link.href}
                                 onClick={() => setIsOpen(false)}
                                 className="block w-full text-white text-base font-medium px-6 py-4 border-b border-white/5 hover:bg-white/5 transition-colors"
+                            >
+                                {link.label}
+                            </Link>
+                        </li>
+                    ))}
+                    {/* Mobile: More section */}
+                    <li className="pt-2 pb-1 px-6 text-xs font-semibold tracking-widest text-white/40 uppercase">
+                        More
+                    </li>
+                    {moreLinks.map((link) => (
+                        <li key={link.label}>
+                            <Link
+                                href={link.href}
+                                onClick={() => setIsOpen(false)}
+                                className="block w-full text-white/80 text-base px-6 py-3 border-b border-white/5 hover:bg-white/5 transition-colors"
                             >
                                 {link.label}
                             </Link>
