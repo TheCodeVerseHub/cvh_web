@@ -13,7 +13,7 @@ This page is our way of saying _thank you_ to the people who keep the lights on,
 
 ## Server Boosters
 
-Boosting isn't just a purple badge  it literally gives us better audio quality, more emoji slots, and higher upload limits.
+Boosting isn't just a purple badge , it literally gives us better audio quality, more emoji slots, and higher upload limits.
 
 A huge thank you to everyone who has boosted the server, including (but not limited to):
 
