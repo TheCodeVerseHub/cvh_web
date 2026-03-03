@@ -23,6 +23,7 @@ import {
     Calendar,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import Navbar from "../../../components/Navbar";
 import DocSidebar from "./DocSidebar";
 
 const contentDirectory = path.join(process.cwd(), "content/pages");
@@ -114,12 +115,15 @@ export default async function ContentPage({ params }: PageProps) {
 
     if (!page) {
         return (
-            <div className="min-h-screen bg-black flex items-center justify-center">
-                <div className="text-center">
-                    <h1 className="text-4xl font-bold text-white mb-4">Page Not Found</h1>
-                    <Link href="/" className="text-violet-400 hover:text-violet-300">
-                        Return Home
-                    </Link>
+            <div className="min-h-screen bg-black">
+                <Navbar />
+                <div className="flex items-center justify-center px-4 py-16">
+                    <div className="text-center">
+                        <h1 className="text-4xl font-bold text-white mb-4">Page Not Found</h1>
+                        <Link href="/" className="text-violet-400 hover:text-violet-300">
+                            Return Home
+                        </Link>
+                    </div>
                 </div>
             </div>
         );
@@ -129,6 +133,7 @@ export default async function ContentPage({ params }: PageProps) {
 
     return (
         <div className="min-h-screen bg-black">
+            <Navbar />
             <div className="max-w-7xl mx-auto px-4 py-16">
                 <Link
                     href="/"

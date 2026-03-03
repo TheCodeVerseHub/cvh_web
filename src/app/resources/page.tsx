@@ -2,17 +2,16 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import {
-    ArrowLeft,
-    ExternalLink,
-    BookOpen,
-    Code,
-    Wrench,
-    Gamepad2,
-    Video,
-    BrainCircuit,
-    Terminal,
-} from "lucide-react";
+import Image from "next/image";
+import { ArrowLeft, ExternalLink, Wrench } from "lucide-react";
+import Navbar from "../../components/Navbar";
+import pythonLogo from "../../../assets/python.png";
+import rustLogo from "../../../assets/rust.png";
+import javascriptLogo from "../../../assets/javascript.png";
+import typescriptLogo from "../../../assets/typescript.png";
+import cppLogo from "../../../assets/cpp.png";
+import javaLogo from "../../../assets/java.png";
+import goLogo from "../../../assets/go.png";
 
 interface Resource {
     title: string;
@@ -37,8 +36,14 @@ const categories: Category[] = [
     {
         id: "python",
         label: "Python",
-        icon: <Code className="w-5 h-5" />,
-        color: "from-yellow-400 to-yellow-600",
+        icon: (
+            <Image
+                src={pythonLogo}
+                alt="Python logo"
+                className="w-5 h-5 object-contain"
+            />
+        ),
+        color: "from-violet-500 to-fuchsia-500",
         description:
             "From automating scripts to machine learning — the most beginner-friendly powerhouse.",
         sections: [
@@ -163,8 +168,14 @@ const categories: Category[] = [
     {
         id: "rust",
         label: "Rust",
-        icon: <Terminal className="w-5 h-5" />,
-        color: "from-orange-400 to-red-600",
+        icon: (
+            <Image
+                src={rustLogo}
+                alt="Rust logo"
+                className="w-5 h-5 object-contain"
+            />
+        ),
+        color: "from-violet-500 to-fuchsia-500",
         description:
             "Memory safety without garbage collection — blazingly fast, reliable, and productive.",
         sections: [
@@ -291,8 +302,14 @@ const categories: Category[] = [
     {
         id: "javascript",
         label: "JavaScript / TypeScript",
-        icon: <Code className="w-5 h-5" />,
-        color: "from-blue-400 to-yellow-400",
+        icon: (
+            <Image
+                src={javascriptLogo}
+                alt="JavaScript logo"
+                className="w-5 h-5 object-contain"
+            />
+        ),
+        color: "from-violet-500 to-fuchsia-500",
         description:
             "The language of the web — from interactive UIs to full-stack servers and beyond.",
         sections: [
@@ -424,10 +441,299 @@ const categories: Category[] = [
         ],
     },
     {
+        id: "cpp",
+        label: "C / C++",
+        icon: (
+            <Image
+                src={cppLogo}
+                alt="C and C++ logo"
+                className="w-5 h-5 object-contain"
+            />
+        ),
+        color: "from-violet-500 to-fuchsia-500",
+        description:
+            "Low-level power for systems, game engines, and performance-critical applications.",
+        sections: [
+            {
+                heading: "C Fundamentals",
+                resources: [
+                    {
+                        title: "Beej's Guide to C Programming",
+                        url: "https://beej.us/guide/bgc/",
+                        description:
+                            "A free, friendly guide that walks you through modern C programming.",
+                        tag: "Free Book",
+                    },
+                    {
+                        title: "C Programming Language (K&R)",
+                        url: "https://en.wikipedia.org/wiki/The_C_Programming_Language",
+                        description:
+                            "The classic C book — still one of the best references around.",
+                        tag: "Book",
+                    },
+                    {
+                        title: "Learn C in Y Minutes",
+                        url: "https://learnxinyminutes.com/docs/c/",
+                        description:
+                            "Compact reference-style overview of C syntax and idioms.",
+                        tag: "Article",
+                    },
+                ],
+            },
+            {
+                heading: "Modern C++",
+                resources: [
+                    {
+                        title: "C++ Core Guidelines",
+                        url: "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines",
+                        description:
+                            "Curated best practices for modern C++ from the C++ community.",
+                        tag: "Guide",
+                    },
+                    {
+                        title: "cppreference",
+                        url: "https://en.cppreference.com/w/",
+                        description:
+                            "The go-to online reference for the C and C++ standard libraries.",
+                        tag: "Docs",
+                    },
+                    {
+                        title: "Effective Modern C++",
+                        url: "https://www.oreilly.com/library/view/effective-modern-c/9781491908419/",
+                        description:
+                            "Focused guidance on writing clean, modern C++11 and C++14 code.",
+                        tag: "Book",
+                    },
+                ],
+            },
+            {
+                heading: "Video & Practice",
+                resources: [
+                    {
+                        title: "The Cherno C++",
+                        url: "https://www.youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT",
+                        description:
+                            "Popular C++ playlist covering the language from the ground up.",
+                        tag: "YouTube",
+                    },
+                    {
+                        title: "freeCodeCamp C++ Course",
+                        url: "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+                        description:
+                            "A full C++ course on YouTube aimed at beginners.",
+                        tag: "YouTube",
+                    },
+                    {
+                        title: "CodinGame",
+                        url: "https://www.codingame.com/",
+                        description:
+                            "Solve puzzles and compete in code battles in many languages including C++.",
+                        tag: "Exercises",
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        id: "java",
+        label: "Java",
+        icon: (
+            <Image
+                src={javaLogo}
+                alt="Java logo"
+                className="w-5 h-5 object-contain"
+            />
+        ),
+        color: "from-violet-500 to-fuchsia-500",
+        description:
+            "Battle-tested language for backend services, Android apps, and enterprise systems.",
+        sections: [
+            {
+                heading: "Getting Started",
+                resources: [
+                    {
+                        title: "The Java™ Tutorials",
+                        url: "https://docs.oracle.com/javase/tutorial/",
+                        description:
+                            "Official tutorials from Oracle covering core Java concepts.",
+                        tag: "Docs",
+                    },
+                    {
+                        title: "Head First Java",
+                        url: "https://www.oreilly.com/library/view/head-first-java/0596009208/",
+                        description:
+                            "Beginner-friendly, visual introduction to Java and object-oriented thinking.",
+                        tag: "Book",
+                    },
+                    {
+                        title: "Java Programming: Solving Problems with Software",
+                        url: "https://www.coursera.org/learn/java-programming",
+                        description:
+                            "A Coursera course that introduces Java via practical problem solving.",
+                        tag: "Course",
+                    },
+                ],
+            },
+            {
+                heading: "Intermediate & Advanced",
+                resources: [
+                    {
+                        title: "Effective Java",
+                        url: "https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/",
+                        description:
+                            "Best practices and patterns for writing robust, modern Java.",
+                        tag: "Book",
+                    },
+                    {
+                        title: "Modern Java in Action",
+                        url: "https://www.manning.com/books/modern-java-in-action",
+                        description:
+                            "Covers streams, lambdas, and modern Java features with real examples.",
+                        tag: "Book",
+                    },
+                    {
+                        title: "Spring Boot Reference Documentation",
+                        url: "https://docs.spring.io/spring-boot/reference/htmlsingle/",
+                        description:
+                            "Official guide to building production-grade services with Spring Boot.",
+                        tag: "Docs",
+                    },
+                ],
+            },
+            {
+                heading: "Video & Practice",
+                resources: [
+                    {
+                        title: "freeCodeCamp Java Course",
+                        url: "https://www.youtube.com/watch?v=grEKMHGYyns",
+                        description:
+                            "Free full Java course on YouTube for beginners.",
+                        tag: "YouTube",
+                    },
+                    {
+                        title: "Bro Code Java Playlist",
+                        url: "https://www.youtube.com/playlist?list=PLZPZq0r_RZOPa03Q9Mjl7wQ0X_z4J8TZ-",
+                        description:
+                            "Beginner-friendly Java tutorials with lots of practical examples.",
+                        tag: "YouTube",
+                    },
+                    {
+                        title: "HackerRank Java Track",
+                        url: "https://www.hackerrank.com/domains/java",
+                        description:
+                            "Practice Java problems from basic syntax to advanced topics.",
+                        tag: "Exercises",
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        id: "go",
+        label: "Go (Golang)",
+        icon: (
+            <Image
+                src={goLogo}
+                alt="Go logo"
+                className="w-5 h-5 object-contain"
+            />
+        ),
+        color: "from-violet-500 to-fuchsia-500",
+        description:
+            "Simple, fast, and concurrent — ideal for microservices, tooling, and cloud-native apps.",
+        sections: [
+            {
+                heading: "Getting Started",
+                resources: [
+                    {
+                        title: "A Tour of Go",
+                        url: "https://go.dev/tour/",
+                        description:
+                            "Official interactive introduction to Go straight in your browser.",
+                        tag: "Interactive",
+                    },
+                    {
+                        title: "The Go Programming Language",
+                        url: "https://www.gopl.io/",
+                        description:
+                            "Canonical book that teaches Go through clear examples and exercises.",
+                        tag: "Book",
+                    },
+                    {
+                        title: "Go by Example",
+                        url: "https://gobyexample.com/",
+                        description:
+                            "Hands-on introduction to Go using annotated example programs.",
+                        tag: "Guide",
+                    },
+                    {
+                        title: "Go Documentation",
+                        url: "https://go.dev/doc/",
+                        description:
+                            "Official docs, tutorials, and references for the Go language.",
+                        tag: "Docs",
+                    },
+                ],
+            },
+            {
+                heading: "Intermediate & Advanced",
+                resources: [
+                    {
+                        title: "Effective Go",
+                        url: "https://go.dev/doc/effective_go",
+                        description:
+                            "Guidelines for writing clear, idiomatic, and efficient Go.",
+                        tag: "Guide",
+                    },
+                    {
+                        title: "Concurrency in Go",
+                        url: "https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/",
+                        description:
+                            "In-depth look at concurrency patterns and design in Go.",
+                        tag: "Book",
+                    },
+                    {
+                        title: "Go Proverbs",
+                        url: "https://go-proverbs.github.io/",
+                        description:
+                            "Short, insightful sayings capturing Go's philosophy and idioms.",
+                        tag: "Article",
+                    },
+                ],
+            },
+            {
+                heading: "Video & Practice",
+                resources: [
+                    {
+                        title: "JustForFunc: Programming in Go",
+                        url: "https://www.youtube.com/@justforfunc",
+                        description:
+                            "YouTube channel focused on building real-world projects in Go.",
+                        tag: "YouTube",
+                    },
+                    {
+                        title: "freeCodeCamp Go Course",
+                        url: "https://www.youtube.com/watch?v=YS4e4q9oBaU",
+                        description:
+                            "Beginner-friendly Go course that covers the language fundamentals.",
+                        tag: "YouTube",
+                    },
+                    {
+                        title: "Gophercises",
+                        url: "https://gophercises.com/",
+                        description:
+                            "Hands-on Go exercises that help you build small but useful projects.",
+                        tag: "Exercises",
+                    },
+                ],
+            },
+        ],
+    },
+    {
         id: "tools",
         label: "Tools & General",
         icon: <Wrench className="w-5 h-5" />,
-        color: "from-violet-400 to-fuchsia-500",
+        color: "from-violet-500 to-fuchsia-500",
         description:
             "Editors, version control, regex, and cross-language resources every developer needs.",
         sections: [
@@ -528,17 +834,17 @@ const categories: Category[] = [
 ];
 
 const tagColors: Record<string, string> = {
-    "Free Book": "bg-green-500/20 text-green-400",
-    Book: "bg-blue-500/20 text-blue-400",
-    Course: "bg-purple-500/20 text-purple-400",
-    Tutorials: "bg-cyan-500/20 text-cyan-400",
-    Docs: "bg-sky-500/20 text-sky-400",
-    Interactive: "bg-amber-500/20 text-amber-400",
-    Exercises: "bg-orange-500/20 text-orange-400",
-    Article: "bg-pink-500/20 text-pink-400",
-    YouTube: "bg-red-500/20 text-red-400",
-    Tool: "bg-indigo-500/20 text-indigo-400",
-    Guide: "bg-teal-500/20 text-teal-400",
+    "Free Book": "bg-white/10 text-violet-300",
+    Book: "bg-white/10 text-violet-300",
+    Course: "bg-white/10 text-violet-300",
+    Tutorials: "bg-white/10 text-violet-300",
+    Docs: "bg-white/10 text-violet-300",
+    Interactive: "bg-white/10 text-violet-300",
+    Exercises: "bg-white/10 text-violet-300",
+    Article: "bg-white/10 text-violet-300",
+    YouTube: "bg-white/10 text-violet-300",
+    Tool: "bg-white/10 text-violet-300",
+    Guide: "bg-white/10 text-violet-300",
 };
 
 export default function ResourcesPage() {
@@ -548,6 +854,7 @@ export default function ResourcesPage() {
 
     return (
         <div className="min-h-screen bg-black">
+            <Navbar />
             <div className="max-w-7xl mx-auto px-4 py-12">
                 <Link
                     href="/"
@@ -580,7 +887,7 @@ export default function ResourcesPage() {
                                         }`}
                                 >
                                     <span
-                                        className={`p-1.5 rounded-lg bg-gradient-to-br ${cat.color} text-white`}
+                                        className="p-1.5 rounded-lg bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white shadow-sm shadow-violet-500/40"
                                     >
                                         {cat.icon}
                                     </span>
