@@ -23,6 +23,11 @@ const menuItems = [
     text: "CVH Linux Distro",
     image: "https://placehold.co/400x200/22C55E/white?text=CVH+Linux",
   },
+  {
+    link: "https://github.com/TheCodeVerseHub/cvh_web",
+    text: "CVH Web (this site)",
+    image: "https://placehold.co/400x200/0EA5E9/white?text=CVH+Web",
+  },
 ];
 
 export default function Projects() {

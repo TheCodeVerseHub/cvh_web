@@ -27,6 +27,12 @@ const contactMethods = [
         value: "@TheCodeVerseHub",
         href: "https://github.com/TheCodeVerseHub/",
     },
+    {
+        icon: Github,
+        label: "Contribute to CVH Web",
+        value: "Open-source website on GitHub",
+        href: "https://github.com/TheCodeVerseHub/cvh_web",
+    },
 ];
 
 export default function ContactSection() {
@@ -68,39 +74,69 @@ export default function ContactSection() {
                     Touch
                 </GradientText>
             </h2>
-            <p className="text-white/40 text-base md:text-lg lg:text-xl tracking-wide mb-10 md:mb-16 text-center max-w-2xl">
-                Have a question or want to collaborate? Our inbox is always open.
+            <p className="text-white/40 text-base md:text-lg lg:text-xl tracking-wide mb-6 md:mb-8 text-center max-w-2xl">
+                Have a question, want to collaborate, or interested in contributing to
+                our open-source projects? Our inbox is always open.
             </p>
 
+            <div className="w-full max-w-4xl grid gap-4 mb-8 md:mb-12 md:grid-cols-3">
+                <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-left">
+                    <p className="text-xs font-semibold tracking-widest text-violet-300/80 uppercase mb-1">
+                        Community Support
+                    </p>
+                    <p className="text-sm text-white/70">
+                        Get help with CodeVerse Hub, bots, and community tools.
+                    </p>
+                </div>
+                <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-left">
+                    <p className="text-xs font-semibold tracking-widest text-fuchsia-300/80 uppercase mb-1">
+                        Partnerships
+                    </p>
+                    <p className="text-sm text-white/70">
+                        Reach out for events, collaborations, and sponsorships.
+                    </p>
+                </div>
+                <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-left">
+                    <p className="text-xs font-semibold tracking-widest text-sky-300/80 uppercase mb-1">
+                        Open Source
+                    </p>
+                    <p className="text-sm text-white/70">
+                        Ask about contributing to our GitHub projects, including this site.
+                    </p>
+                </div>
+            </div>
+
             <div className="w-full max-w-5xl grid gap-8 lg:grid-cols-2">
-                <div className="space-y-4">
-                    {contactMethods.map((method, index) => {
-                        const Icon = method.icon;
-                        return (
-                            <a
-                                key={index}
-                                href={method.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-4 p-4 rounded-xl border border-white/10 bg-white/5 hover:border-violet-500/50 hover:bg-white/10 transition-all duration-300 group"
-                            >
-                                <div className="w-12 h-12 rounded-lg bg-violet-500/10 flex items-center justify-center group-hover:bg-violet-500/20 transition-colors">
-                                    <span className="text-violet-400">
-                                        <Icon />
-                                    </span>
-                                </div>
-                                <div>
-                                    <p className="text-white/50 text-xs uppercase tracking-wider">
-                                        {method.label}
-                                    </p>
-                                    <p className="text-white font-medium">{method.value}</p>
-                                </div>
-                            </a>
-                        );
-                    })}
+                <div className="p-6 rounded-2xl border border-white/10 bg-white/5 h-full flex flex-col">
+                    <div className="space-y-4 flex-1">
+                        {contactMethods.map((method, index) => {
+                            const Icon = method.icon;
+                            return (
+                                <a
+                                    key={index}
+                                    href={method.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-4 p-4 rounded-xl border border-white/10 bg-black/40 hover:border-violet-500/50 hover:bg-black/60 transition-all duration-300 group"
+                                >
+                                    <div className="w-12 h-12 rounded-lg bg-violet-500/10 flex items-center justify-center group-hover:bg-violet-500/20 transition-colors">
+                                        <span className="text-violet-400">
+                                            <Icon />
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <p className="text-white/50 text-xs uppercase tracking-wider">
+                                            {method.label}
+                                        </p>
+                                        <p className="text-white font-medium">{method.value}</p>
+                                    </div>
+                                </a>
+                            );
+                        })}
+                    </div>
                 </div>
 
-                <div className="p-6 rounded-2xl border border-white/10 bg-white/5">
+                <div className="p-6 rounded-2xl border border-white/10 bg-white/5 h-full flex flex-col justify-center">
                     {submitted ? (
                         <div className="h-full flex flex-col items-center justify-center text-center py-8">
                             <CheckCircle className="w-16 h-16 text-green-400 mb-4" />
