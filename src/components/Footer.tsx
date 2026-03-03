@@ -7,11 +7,12 @@ const footerLinks = {
   community: [
     { name: "Rules", href: "/pages/rules" },
     { name: "Code of Conduct", href: "/pages/code-of-conduct" },
-    { name: "Server Info", href: "/pages/server-info" },
+  { name: "Hall of Fame", href: "/pages/hall-of-fame" },
     { name: "Moderation", href: "/pages/moderation-guide" },
   ],
   resources: [
     { name: "Guides", href: "/pages/how-to-ask" },
+  { name: "How to Help", href: "/pages/how-to-help" },
     { name: "Tags", href: "/pages/tags" },
     { name: "Learning", href: "/resources" },
     { name: "FAQ", href: "/pages/faq" },

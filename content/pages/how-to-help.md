@@ -9,9 +9,9 @@ lastUpdated: March 2026
 
 ## Before You Start Helping
 
-- **Read the rules** in `/pages/rules` and `/pages/code-of-conduct` so you know what is and isnt okay.
+- **Read the rules** in `/pages/rules` and `/pages/code-of-conduct` so you know what is and isn't okay.
 - Prefer **public help channels and threads** over DMs so others can learn from the same answer.
-- If youre tired or busy, its okay to **skip a question**. Quality beats speed.
+- If you're tired or busy, it's okay to **skip a question**. Quality beats speed.
 
 ---
 
@@ -22,15 +22,15 @@ lastUpdated: March 2026
 Before you jump into code:
 
 - Ask clarifying questions ("What did you try?", "What error do you get?", "What are you trying to build?").
-- Watch out for the [XY Problem](https://xyproblem.info/)  sometimes what theyre asking for isnt what they actually need.
+- Watch out for the [XY Problem](https://xyproblem.info/)  sometimes what they're asking for isn't what they actually need.
 
 ### 2. Start from what they know
 
-- If theyre a beginner, avoid dropping a wall of advanced concepts with no explanation.
+- If they're a beginner, avoid dropping a wall of advanced concepts with no explanation.
 - Use plain language, diagrams, or step-by-step bullets when needed.
 - Prefer **small, focused examples** over rewriting their entire project.
 
-### 3. Show, dont just tell
+### 3. Show, don't just tell
 
 - If a one-line fix exists, explain **why** it fixes the issue.
 - Use short code snippets instead of screenshots.
@@ -38,8 +38,8 @@ Before you jump into code:
 
 ### 4. Be honest about your limits
 
-- Its totally fine to say, "Im not 100% sure, but heres what I would try."
-- Dont guess in a way that could break someones project or data.
+- It's totally fine to say, "I'm not 100% sure, but here's what I would try."
+- Don't guess in a way that could break someone's project or data.
 
 ---
 
@@ -50,9 +50,9 @@ Before you jump into code:
 - Keep help in public channels unless **staff explicitly approves** something different.
 - If someone insists on DMs, you can politely say no and ping a Mod if needed.
 
-### Dont farm clout
+### Don't farm clout
 
-- Helping is awesome, but **dont spam** low-effort replies just to look active.
+- Helping is awesome, but **don't spam** low-effort replies just to look active.
 - Avoid copying answers from the internet/AI without reading or testing them first.
 
 ### Be kind to beginners
@@ -92,8 +92,8 @@ Before you jump into code:
 
 Helping can be draining if you do it a lot.
 
-- Its okay to **mute channels** or step away.
-- Dont feel obligated to answer every ping.
+- It's okay to **mute channels** or step away.
+- Don't feel obligated to answer every ping.
 - If a conversation turns rude or uncomfortable, **stop replying and ping staff**.
 
 ---
@@ -105,4 +105,4 @@ Helping can be draining if you do it a lot.
 - Keep help public so the whole community benefits.
 - Know your limits and take breaks.
 
-If youre ever unsure how to handle a situation while helping, ping a staff member  were here for you too.
+If you're ever unsure how to handle a situation while helping, ping a staff member  we're here for you too.

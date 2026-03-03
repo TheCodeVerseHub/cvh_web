@@ -9,15 +9,17 @@ const navLinks = [
     { href: "/pages/rules", label: "Rules" },
     { href: "/pages/faq", label: "FAQ" },
     { href: "/resources", label: "Resources" },
-    { href: "/pages/server-info", label: "Server Info" },
+    { href: "/pages/hall-of-fame", label: "Hall of Fame" },
 ];
 
 const moreLinks = [
     { href: "/pages/code-of-conduct", label: "Code of Conduct" },
     { href: "/pages/how-to-ask", label: "How to Ask for Help" },
+    { href: "/pages/how-to-help", label: "How to Help" },
     { href: "/pages/join", label: "Join Guide" },
     { href: "/pages/contributing", label: "Contributing" },
     { href: "/pages/moderation-guide", label: "Moderation Guide" },
+    { href: "/pages/server-info", label: "Server Info" },
     { href: "/pages/privacy-policy", label: "Privacy Policy" },
     { href: "/pages/security-notice", label: "Security Notice" },
     { href: "/pages/tags", label: "Tags Reference" },
