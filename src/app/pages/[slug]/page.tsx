@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 import Link from "next/link";
+import type { Metadata } from "next";
 import {
     ArrowLeft,
     Shield,
@@ -106,11 +107,45 @@ async function getPageContent(slug: string) {
 }
 
 interface PageProps {
-    params: Promise<{ slug: string }>;
+    params: { slug: string };
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const page = await getPageContent(params.slug);
+
+    if (!page) {
+        return {
+            title: "Page Not Found | The Codeverse Hub",
+            description: "The page you are looking for could not be found on The Codeverse Hub.",
+        };
+    }
+
+    const title = `${page.title} | The Codeverse Hub`;
+    const description =
+        page.description || "Guides and documentation from The Codeverse Hub community.";
+
+    return {
+        title,
+        description,
+        alternates: {
+            canonical: `/pages/${page.slug}`,
+        },
+        openGraph: {
+            title,
+            description,
+            url: `/pages/${page.slug}`,
+            type: "article",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+        },
+    };
 }
 
 export default async function ContentPage({ params }: PageProps) {
-    const { slug } = await params;
+    const { slug } = params;
     const page = await getPageContent(slug);
 
     if (!page) {
