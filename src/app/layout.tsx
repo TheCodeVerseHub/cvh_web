@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     creator: "@TheCodeverseHub",
   },
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   robots: {
     index: true,
@@ -89,7 +89,7 @@ export default function RootLayout({
     "@type": "Organization",
     name: siteName,
     url: siteUrl,
-    logo: `${siteUrl}/favicon.png`,
+    logo: `${siteUrl}/logo.png`,
     sameAs: [
       "https://discord.gg/3xKFvKhuGR",
       "https://github.com/TheCodeVerseHub",
