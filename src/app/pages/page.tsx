@@ -54,6 +54,12 @@ const pages = [
     icon: BookOpen,
   },
   {
+    slug: "staff-roles",
+    title: "Staff Roles & Structure",
+    description: "How the staff team is organised and what each role does.",
+    icon: Users,
+  },
+  {
     slug: "code-of-conduct",
     title: "Code of Conduct",
     description: "Community standards for respectful, inclusive behaviour.",

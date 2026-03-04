@@ -22,6 +22,7 @@ const moreLinks = [
     { href: "/pages/server-info", label: "Server Info" },
     { href: "/pages/privacy-policy", label: "Privacy Policy" },
     { href: "/pages/security-notice", label: "Security Notice" },
+    { href: "/pages/staff-roles", label: "Staff Roles" },
     { href: "/pages/tags", label: "Tags Reference" },
     { href: "/pages/acknowledgements", label: "Acknowledgements" },
 ];
