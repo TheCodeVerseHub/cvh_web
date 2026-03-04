@@ -117,7 +117,6 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        <div className="glow-frame" />
         {children}
       </body>
     </html>
