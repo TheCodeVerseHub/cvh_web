@@ -102,7 +102,6 @@ async function getPageContent(slug: string | undefined) {
             title: data.title || slug.replace(/-/g, " ").replace(/\b\w/g, (l: string) => l.toUpperCase()),
             description: data.description || "",
             icon: data.icon || "",
-            image: data.image || "",
             lastUpdated: data.lastUpdated || "",
             contentHtml: processedHtml,
             toc,
@@ -128,12 +127,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         };
     }
 
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://thecodesversehub.tech";
     const title = `${page.title} | The Codeverse Hub`;
     const description =
         page.description || "Guides and documentation from The Codeverse Hub community.";
 
-    const metadata: Metadata = {
+    return {
         title,
         description,
         alternates: {
@@ -146,25 +144,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             type: "article",
         },
         twitter: {
-            card: "summary_large_image",
+            card: "summary",
             title,
             description,
         },
     };
-
-    if (page.image) {
-        const imageUrl = page.image.startsWith('http') ? page.image : `${siteUrl}${page.image}`;
-        metadata.openGraph = {
-            ...metadata.openGraph,
-            images: [{ url: imageUrl, width: 1200, height: 630 }],
-        };
-        metadata.twitter = {
-            ...metadata.twitter,
-            images: [imageUrl],
-        };
-    }
-
-    return metadata;
 }
 
 export default async function ContentPage({ params }: PageProps) {

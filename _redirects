@@ -1,0 +1,2 @@
+# Redirect all traffic from .netlify.app to .com
+https://thecodeversehub.netlify.app/* https://thecodeversehub.tech/:splat 301!

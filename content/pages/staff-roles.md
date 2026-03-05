@@ -2,7 +2,6 @@
 title: Staff Roles & Hierarchy
 description: Overview of the staff structure, responsibilities, and promotion path inside CodeVerse Hub.
 icon: users
-image: /logo.png
 lastUpdated: March 2026
 ---
 
