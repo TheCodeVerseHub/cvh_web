@@ -71,7 +71,7 @@ If you witness or experience a violation of this Code of Conduct, please report 
 
 - Open a **ModMail** ticket on our Discord server
 - Tag the `@Moderators` role for urgent issues (use sparingly)
-- Email us at `thecodeversedev@gmail.com` for sensitive matters
+- Email us at `contact@thecodeversehub.tech` for sensitive matters
 
 > All reports are handled confidentially. We take every report seriously.
 

@@ -11,7 +11,7 @@ lastUpdated: February 2026
 
 **Please do NOT open a public GitHub issue for security vulnerabilities.**
 
-Send details to `thecodeversedev@gmail.com` or DM a server Admin, including:
+Send details to `contact@thecodeversehub.tech` or DM a server Admin, including:
 
 - The website, page, or repository where the vulnerability can be observed
 - A brief description of the vulnerability

@@ -24,7 +24,7 @@ This policy applies to:
 
 Instead, contact us privately:
 
-- Email: **thecodeversedev@gmail.com**
+- Email: **contact@thecodeversehub.tech**
 - Or DM a server Admin / Owner in the CodeVerse Hub Discord
 
 When reporting, please include (where possible):

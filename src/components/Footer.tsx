@@ -50,7 +50,7 @@ const socialLinks = [
   },
   {
     name: "Email",
-    href: "mailto:thecodeversedev@gmail.com",
+    href: "mailto:contact@thecodeversehub.tech",
     icon: Mail,
   },
 ];

@@ -34,4 +34,4 @@ lastUpdated: February 2026
 
 ## Contact
 
-For privacy concerns, please contact us via **ModMail** or email `thecodeversedev@gmail.com`.
+For privacy concerns, please contact us via **ModMail** or email `contact@thecodeversehub.tech`.
