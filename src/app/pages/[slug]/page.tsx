@@ -102,6 +102,7 @@ async function getPageContent(slug: string | undefined) {
             title: data.title || slug.replace(/-/g, " ").replace(/\b\w/g, (l: string) => l.toUpperCase()),
             description: data.description || "",
             icon: data.icon || "",
+            image: data.image || "",
             lastUpdated: data.lastUpdated || "",
             contentHtml: processedHtml,
             toc,
@@ -131,7 +132,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const description =
         page.description || "Guides and documentation from The Codeverse Hub community.";
 
-    return {
+    const metadata: Metadata = {
         title,
         description,
         alternates: {
@@ -149,6 +150,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             description,
         },
     };
+
+    if (page.image) {
+        metadata.openGraph = {
+            ...metadata.openGraph,
+            images: [{ url: page.image }],
+        };
+        metadata.twitter = {
+            ...metadata.twitter,
+            images: [page.image],
+        };
+    }
+
+    return metadata;
 }
 
 export default async function ContentPage({ params }: PageProps) {
