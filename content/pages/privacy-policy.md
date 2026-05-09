@@ -2,7 +2,7 @@
 title: Privacy Policy
 description: How CodeVerse Hub handles, stores, and protects your data as a member of our community.
 icon: lock
-lastUpdated: February 2026
+lastUpdated: May 2026
 ---
 
 > Privacy and security of member data is one of our top priorities. This document details what data CodeVerse Hub ("we", "us", or "our") stores on you as a member of our community.
@@ -13,6 +13,7 @@ lastUpdated: February 2026
 - **Infraction Records** — When a user breaches our rules, we store a record of the infraction (warn/ban/kick) linked to their User ID. This is essential for moderation history
 - **ModMail Logs** — All messages sent to our ModMail bot are stored to facilitate support and moderation oversight
 - **Message Logs** — We do not permanently store general chat logs. However, deleted messages may be temporarily logged for moderation review
+- **Website Form Submissions (Ban Appeals)** — If you submit a ban appeal via our website, the information you provide is delivered to the moderation team (for review) through our internal tooling
 
 ---
 

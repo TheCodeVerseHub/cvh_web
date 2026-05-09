@@ -2,7 +2,7 @@
 title: Rules of CodeVerse Hub
 description: The complete set of community rules that keep our server safe, respectful, and enjoyable for everyone.
 icon: shield
-lastUpdated: February 2026
+lastUpdated: May 2026
 ---
 
 > These rules exist to protect every member and ensure CodeVerse Hub remains a friendly, welcoming space. Please read them carefully — ignorance is not an excuse.
@@ -92,6 +92,8 @@ These rules are not exhaustive. Trying to bypass rules is not allowed. If you're
 ## Respect Moderation Decisions
 
 Do not disrupt the server if you disagree with a punishment. Appeal respectfully through proper channels.
+
+Ban appeals can be submitted via `/ban-appeal` (recommended) or through ModMail if you cannot access the website.
 
 If bias is suspected after appeal, contact staff in this order via tickets/modmail only:
 

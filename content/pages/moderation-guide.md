@@ -2,7 +2,7 @@
 title: Moderation Guide
 description: Guidelines for reporting rule violations and understanding how the moderation team handles incidents.
 icon: gavel
-lastUpdated: February 2026
+lastUpdated: May 2026
 ---
 
 > Our moderation team is committed to keeping the community safe. If you see a violation, please report it — your help makes our community better.
@@ -34,8 +34,11 @@ Moderators should:
 
 Users may appeal moderation actions by:
 
-1. **Opening a ModMail ticket** — Explain why they believe the action was unjust
-2. **Providing context** — Include any relevant information or evidence
-3. **Waiting for review** — The moderation team will review the appeal and respond accordingly
+1. **Submitting the ban appeal form** — Use `/ban-appeal` to send your appeal to the moderation team
+2. **Or opening a ModMail ticket** — DM the @ModMail bot if you cannot access the website
+3. **Providing context** — Include any relevant information or evidence
+4. **Waiting for review** — The moderation team will review the appeal and respond accordingly
+
+> Tip: Be honest, include evidence links when relevant, and avoid leaving out key details.
 
 > We strive to be fair and transparent in all moderation decisions. If you feel you've been treated unfairly, we encourage you to appeal.

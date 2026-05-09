@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ## [Unreleased]
 
 ### Added
+- Ban appeal form at `/ban-appeal` that submits to `/api/ban-appeal` and delivers appeals to a Discord channel via webhook
 - Animated terminal window component with typewriter effect and language switcher (Python / TypeScript / Rust)
 - `Features` section — 8-card grid covering community offerings (help desk, code reviews, OSS hub, etc.)
 - `TechMarquee` component — dual-row infinite scrolling marquee of 28+ languages and frameworks

@@ -2,7 +2,7 @@
 title: Frequently Asked Questions
 description: Answers to common questions about roles, events, bots, learning, safety, and support in the CodeVerse Hub Discord community.
 icon: help-circle
-lastUpdated: March 2026
+lastUpdated: May 2026
 ---
 
 > Before posting in public channels, skim this FAQ first — many common questions are already answered here.
@@ -139,6 +139,11 @@ If you see suspicious or inappropriate behaviour:
 3. Optionally ping an **online moderator** if the situation is urgent (for example, ongoing harassment or dangerous content).
 
 Staff will review the report, take appropriate action, and may follow up with you for additional details if needed.
+
+### How do I appeal a ban?
+
+- Use the ban appeal form at `/ban-appeal` (recommended), and include evidence links if possible.
+- If you cannot access the website, open a ModMail ticket by DMing the @ModMail bot.
 
 ---
 
