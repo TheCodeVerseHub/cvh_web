@@ -72,9 +72,9 @@ export default function Home() {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-white leading-[1.05] tracking-tight">
                   Build faster with a
                 </h1>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight bg-gradient-to-r from-violet-300 via-fuchsia-400 to-indigo-300 bg-clip-text text-transparent">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight bg-gradient-to-r from-violet-300 via-fuchsia-400 to-indigo-300 bg-clip-text text-transparent">
                   real developer community
-                </h1>
+                </h2>
                 <p className="text-white/70 text-base sm:text-lg md:text-xl leading-relaxed max-w-xl">
                   CodeVerse Hub is your always-on Discord for code reviews, open
                   source teams, mentorship, and instant help — designed for
