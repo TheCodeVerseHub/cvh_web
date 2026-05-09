@@ -41,3 +41,25 @@ This project is configured to deploy on [Netlify](https://www.netlify.com/).
 The repository includes a `netlify.toml` with these settings and uses the official `@netlify/plugin-nextjs` to run Next.js on Netlify's edge/functions environment.
 
 For more details, see the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) and the [Netlify Next.js docs](https://docs.netlify.com/integrations/frameworks/next-js/).
+
+## Ban appeal form → Discord webhook
+
+This repo includes a ban appeal page at `/ban-appeal`.
+
+To receive submissions in a Discord channel:
+
+1. In Discord, open the target channel → **Edit Channel** → **Integrations** → **Webhooks** → **New Webhook**.
+2. Copy the webhook URL.
+3. Set the env var `DISCORD_BAN_APPEAL_WEBHOOK_URL`.
+
+Local dev:
+
+```bash
+cp .env.example .env.local
+```
+
+Then paste your webhook into `.env.local`.
+
+Netlify:
+
+- Add `DISCORD_BAN_APPEAL_WEBHOOK_URL` in **Site settings → Environment variables**.
